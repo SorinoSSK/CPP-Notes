@@ -17,6 +17,14 @@ The variable is visible throughout block condition such as "for, if, while, or s
 6) Function scope  
 The variable is visible throughout the function it is declared in.
 
+### new
+Whenever new is declared, you are declaring that the resources (memory) will be managed by the user.  
+```Foo* foo1 = new Foo;```  
+https://stackoverflow.com/questions/12248703/creating-an-instance-of-class
+
+### POD
+POD is an abbrevation for "Plain Old Data" which represent a class without user defined constructors, deconstructors and functions.
+
 ## Declaraction
 ### Using Declaration (using)
 This method allows use of any function, variable, or member at the point it is used. For instance, we would like to use a function of another class within a newly declared class; we could do it in the following way:
@@ -52,7 +60,7 @@ C++ provides multiple methods to declare an instances in which each of them prov
 7) Similar to (6)  
 ```Bar* bar1 = new Bar(Foo::Foo());```
 8) This method is invalid.  
-```Bar* bar1 = new Bar(Foo foo);```
+```Bar* bar1 = new Bar(Foo foo);```  
 Method (5) & (6) may contain memory leak.  
 https://stackoverflow.com/questions/12248703/creating-an-instance-of-class
  
