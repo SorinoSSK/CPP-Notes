@@ -35,6 +35,44 @@ class Y
 }
 ```
 
+## Namespace
+Name space is similar to a class but it works similarly to how a file work. To declare a namespace, you could perform it this way:
+```
+namespace nsTest
+{
+    class ClassX
+    {
+        public:
+            ...
+    }
+    void Function(int)
+    {
+        ...
+    }
+}
+```
+## classes
+Classes are declared a little differently for instance:
+```
+class ClassX
+{
+    (attribute type):
+        ...
+    (variable);
+    void Functions (variable)
+    {
+        ...
+    }
+}
+```
+Where 
+- attribute type: public/ private/ protected
+- variable: any variable
+- Functions: any function name
+
+##__attribute__((__packed__)) _packet_status
+
+
 ## Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access namespace, class or struct.  
 1) Accessing global variable.
@@ -60,9 +98,8 @@ int main()
 3) Accessing namespace
 ```
 using namespace std;
-std::int x = 10;
-
 int main()
 {
+    std::int x = 10;
 }
 ```
