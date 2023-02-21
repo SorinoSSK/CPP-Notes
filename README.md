@@ -43,8 +43,19 @@ C++ provides multiple methods to declare an instances in which each of them prov
 ```Foo* foo1 = new Foo;```
 3) This method of calling a class allows automatic storage (Data of the instance is destroyed when the instance exitted)  
 ```Foo foo1;```
-4) This method copies the class with its initialisation to a new instance and it too allows automatic storage.
+4) This method copies the class with its initialisation to a new instance and it too allows automatic storage.  
 ```Foo foo1 = Foo:Foo()```
+5) This method is similar to the above but you are initialising a type.  
+```Bar* bar1 = new Bar(*new Foo());```
+6) This method is similar too (5)  
+```Bar* bar1 = new Bar(*new Foo);```
+7) Similar to (6)  
+```Bar* bar1 = new Bar(Foo::Foo());```
+8) This method is invalid.  
+```Bar* bar1 = new Bar(Foo foo);```
+Method (5) & (6) may contain memory leak.  
+https://stackoverflow.com/questions/12248703/creating-an-instance-of-class
+ 
 
 ## Namespace
 Name space is similar to a class but it works similarly to how a file work. To declare a namespace, you could perform it this way:
@@ -126,6 +137,7 @@ int main()
     std::int x = 10;
 }
 ```
+https://stackoverflow.com/questions/11902791/what-is-the-difference-between-and-in-c  
 ### Arrow operator (->)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access "pointer".
 ```
@@ -135,8 +147,8 @@ foo->(function)();
 ```
 Where 
 - (variable): a variable within the class pointed to Foo
-- (function): a function within the class pointed to Foo
-
+- (function): a function within the class pointed to Foo  
+https://stackoverflow.com/questions/11902791/what-is-the-difference-between-and-in-c  
 ### Dot operator (.)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access an instances.
 ```
@@ -146,4 +158,5 @@ foo.(function)();
 ```
 Where
 - (variable): a variable within the class Foo
-- (function): a function within the class Foo
+- (function): a function within the class Foo  
+https://stackoverflow.com/questions/11902791/what-is-the-difference-between-and-in-c  
