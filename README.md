@@ -81,7 +81,7 @@ typedef enum __attribute__((__packed__)) _NameX
 {
     int a;
     char b;
-} NameX
+} NameX;
 ```
 
 ## Scope Resolution Operator (::)
