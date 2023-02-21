@@ -70,8 +70,19 @@ Where
 - variable: any variable
 - Functions: any function name
 
-##__attribute__((__packed__)) _packet_status
-
+## __attribute__((__packed__))
+This function is used when memory space is a concern. There are a few instances where memory is of concern,
+1) reducing the amount of data used to transmit over a network
+2) memory space is limited
+3) reading speed of a device  
+In summary, the function removes unnecessary memory space that is not used by the variable. (Removes the concept of paging). You may initialise the function in this way:
+```
+typedef enum __attribute__((__packed__)) _NameX
+{
+    int a;
+    char b;
+} NameX
+```
 
 ## Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access namespace, class or struct.  
