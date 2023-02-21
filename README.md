@@ -84,7 +84,8 @@ typedef enum __attribute__((__packed__)) _NameX
 } NameX;
 ```
 
-## Scope Resolution Operator (::)
+## Operators
+### Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access "namespace, class, or struct".  
 1) Accessing global variable.
 ```
@@ -114,7 +115,7 @@ int main()
     std::int x = 10;
 }
 ```
-## Arrow operator (->)
+### Arrow operator (->)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access "pointer".
 ```
 Foo *foo = new Foo();
@@ -125,7 +126,7 @@ Where
 - (variable): a variable within the class pointed to Foo
 - (function): a function within the class pointed to Foo
 
-## Dot operator (.)
+### Dot operator (.)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access an instances.
 ```
 Foo foo;
