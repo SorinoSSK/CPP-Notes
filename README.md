@@ -3,8 +3,7 @@ This reporsitory is just a summary for me to recall some C++ operator and functi
 
 ## Terminology
 ### Scope
-Scope is use as a reference of a domain a variable is in. The existence of scope allows users to declare functions of the same name as long as they reside in a different scope.  
-For instance scope can be divided into 6 different scope type:  
+Scope is use as a reference of a domain a variable is in. The existence of scope allows users to declare functions of the same name as long as they reside in a different scope. For instance scope can be divided into 6 different scope type:  
 1) Global scope  
 The variable is visible throughout the file it is declared in.
 2) Namespace scope  
@@ -19,7 +18,22 @@ The variable is visible throughout block condition such as "for, if, while, or s
 The variable is visible throughout the function it is declared in.
 
 ## Using Declaration (using)
-This method allows use
+This method allows use of any function, variable, or member at the point it is used. For instance, we would like to use a function of another class within a newly declared class; we could do it in the following way:
+```
+class X
+{
+    public:
+        void f(int)
+        {
+            ...;
+        }
+}
+class Y
+{
+    public:
+        using X::f;
+}
+```
 
 ## Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access namespace, class or struct.  
@@ -28,19 +42,19 @@ This operator is similar to "." operator in other programming languages but in C
 int x = 10;
 int main()
 {
-  cout << ::x << endl;
+    cout << ::x << endl;
 }
 ```
 2) Accessing variable of a class
 ```
 class X
 {
-  public:
-    y = 10;
+    public:
+        y = 10;
 }
 int main()
 {
-  cout << X::y << endl;
+    cout << X::y << endl;
 }
 ```
 3) Accessing namespace
