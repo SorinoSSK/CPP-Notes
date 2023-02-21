@@ -4,14 +4,18 @@ This reporsitory is just a summary for me to recall some C++ operator and functi
 ## Terminology
 ### Scope
 Scope is use as a reference of a domain a variable is in. The existence of scope allows users to declare functions of the same name as long as they reside in a different scope.  
-For instance scope can be divided into 6 different scope type:
-1) Global scope
-2) Namespace scope
-3) Local scope
-4) Class scope
-5) Statement scope
-The variable is visible throughout
-6) Function scope
+For instance scope can be divided into 6 different scope type:  
+1) Global scope  
+The variable is visible throughout the file it is declared in.
+2) Namespace scope  
+The variable can be visible across different code block such as classes, functions, and more.
+3) Local scope  
+The variable is visible in the function it is declared in.
+4) Class scope  
+The variable is visible within the class be it public, private, or protected.
+5) Statement scope  
+The variable is visible throughout block condition such as "for, if, while, or switch" statement.
+6) Function scope  
 The variable is visible throughout the function it is declared in.
 
 ## Using Declaration (using)
