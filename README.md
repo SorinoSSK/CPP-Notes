@@ -51,7 +51,7 @@ namespace nsTest
     }
 }
 ```
-## classes
+## Classes
 Classes are declared a little differently for instance:
 ```
 class ClassX
@@ -70,7 +70,7 @@ Where
 - variable: any variable
 - Functions: any function name
 
-## __attribute__((__packed__))
+## \_\_attribute\_\_((\_\_packed\_\_))
 This function is used when memory space is a concern. There are a few instances where memory is of concern,
 1) reducing the amount of data used to transmit over a network
 2) memory space is limited
