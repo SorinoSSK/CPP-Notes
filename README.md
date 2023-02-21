@@ -1,4 +1,4 @@
-# CPP-summary
+# CPP Summary
 This reporsitory is just a summary for me to recall some C++ operator and function.
 
 ## Terminology
@@ -17,7 +17,8 @@ The variable is visible throughout block condition such as "for, if, while, or s
 6) Function scope  
 The variable is visible throughout the function it is declared in.
 
-## Using Declaration (using)
+## Declaraction
+### Using Declaration (using)
 This method allows use of any function, variable, or member at the point it is used. For instance, we would like to use a function of another class within a newly declared class; we could do it in the following way:
 ```
 class X
@@ -34,6 +35,16 @@ class Y
         using X::f;
 }
 ```
+### Declaring instances
+C++ provides multiple methods to declare an instances in which each of them provide different benefits.
+1) When a class is a POD-type, thus this method allows the initialisation of data when calling the instance of the class. foo1 is a pointer to Foo\*  
+``` Foo* foo1 = new Foo();```
+2) This method of calling a class is similar to (1) but in this case, the class is not a POD-type. foo1 is a pointer to Foo\*  
+```Foo* foo1 = new Foo;```
+3) This method of calling a class allows automatic storage (Data of the instance is destroyed when the instance exitted)  
+```Foo foo1;```
+4) This method copies the class with its initialisation to a new instance and it too allows automatic storage.
+```Foo foo1 = Foo:Foo()```
 
 ## Namespace
 Name space is similar to a class but it works similarly to how a file work. To declare a namespace, you could perform it this way:
