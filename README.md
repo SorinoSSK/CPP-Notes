@@ -8,7 +8,7 @@ This reporsitory is just a summary for me to recall some C++ operator and functi
 ## Installing Compiler
 
 ## Basic Libraries
-### <iostream>
+### \<iostream\>
 **1) std::cout**  
 The object set an output stream where the output can be displayed on a output device such as a monitor.  
 The object prints to the console/ terminal.
