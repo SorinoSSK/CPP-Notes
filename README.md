@@ -17,13 +17,29 @@ The variable is visible throughout block condition such as "for, if, while, or s
 6) Function scope  
 The variable is visible throughout the function it is declared in.
 
-### new
-Whenever new is declared, you are declaring that the resources (memory) will be managed by the user.  
-```Foo* foo1 = new Foo;```  
-https://stackoverflow.com/questions/12248703/creating-an-instance-of-class
+## POD
+POD is an abbrevation for "Plain Old Data" which represent a class without :
+1) user defined destructor
+2) copy assignment (=)
+3) non-static data members that are not a POD
+4) user-declared constructors
+5) no private data
+6) no protected data
+7) no virtual base classes
+8) no virtual functions
 
-### POD
-POD is an abbrevation for "Plain Old Data" which represent a class without user defined constructors, deconstructors and functions.
+In summary, it is a class that does not store any data. It is a passive entity.
+```
+struct Point
+{
+    float x, float y;
+}
+```
+https://stackoverflow.com/questions/30745753/passive-objects-in-c
+
+## Virtual Function
+Virtual function is a function declared within a base class that can be redefined by another class calling the base class. In other words, an abstract class. An abstract class cannot be called using and instance but it can be called by creating a class that extends the base class.
+https://www.javatpoint.com/virtual-function-vs-pure-virtual-function-in-cpp#:~:text=In%20case%20of%20a%20virtual,virtual%20function%20can%20be%20instantiated.
 
 ## Declaraction
 ### Using Declaration (using)
@@ -168,3 +184,9 @@ Where
 - (variable): a variable within the class Foo
 - (function): a function within the class Foo  
 https://stackoverflow.com/questions/11902791/what-is-the-difference-between-and-in-c  
+
+
+### New Operator (new)
+The operator represent storage space allocation. Thus, you are declaring that the resources (memory) will be managed by the user when new is declared.  
+```Foo* foo1 = new Foo;```  
+https://stackoverflow.com/questions/12248703/creating-an-instance-of-class
