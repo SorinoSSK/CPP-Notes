@@ -11,7 +11,7 @@ This reporsitory is just a summary for me to recall some C++ operator and functi
 ### \<iostream\>
 **1) std::cout**  
 The object set an output stream where the output can be displayed on a output device such as a monitor.  
-The object prints to the console/ terminal.
+The object prints to the console/ terminal.  
 **2) std::endl**  
 The object declares the end on the output stream.  
     
