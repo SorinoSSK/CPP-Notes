@@ -32,6 +32,16 @@ int main()
     ...
 }
 ```
+### return 0; in main function
+The return is meant for the operating system (OS) to know when the program has finish executing.
+```
+
+int main()
+{
+    ...
+    return 0;
+}
+```
 ## Terminology
 ### Scope
 Scope is use as a reference of a domain a variable is in. The existence of scope allows users to declare functions of the same name as long as they reside in a different scope. For instance scope can be divided into 6 different scope type:  
