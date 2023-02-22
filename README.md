@@ -26,6 +26,26 @@ int main()
 ```  
 3) std::cin  
 The object reads data from the terminal.  
+```
+int main()
+{
+    std::string name;
+    std::string age;
+    
+    std::cin >> name;
+    std::cin >> age;
+}
+```
+However, the following code does the same as the above.
+```
+int main()
+{
+    std::string name;
+    std::string age;
+    
+    std::cin >> name >> age;
+}   
+```
 4) std::cerr  
 The object prints error to the console.  
 5) std::clog  
