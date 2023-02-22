@@ -37,9 +37,21 @@ struct Point
 ```
 https://stackoverflow.com/questions/30745753/passive-objects-in-c
 
-## Virtual Function
-Virtual function is a function declared within a base class that can be redefined by another class calling the base class. In other words, an abstract class. An abstract class cannot be called using and instance but it can be called by creating a class that extends the base class.
-https://www.javatpoint.com/virtual-function-vs-pure-virtual-function-in-cpp#:~:text=In%20case%20of%20a%20virtual,virtual%20function%20can%20be%20instantiated.
+## Virtual Function (Inheritance)
+Virtual functions allows derived classes to replace the implementation provided by the base class. In other words, the newly derived function will override the function within the base class.  
+https://isocpp.org/wiki/faq/virtual-functions#:~:text=Non%2D%20virtual%20member%20functions%20are%20resolved%20statically.,(at%20run%2Dtime).
+
+## Pure Virtual Function
+Pure Virtual Function are function that must be overridden.
+```
+class Base {
+public:
+    void f1();              // not virtual
+    virtual void f2();      // virtual, not pure
+    virtual void f3() = 0;  // pure virtual
+};
+Base b; // error: pure virtual f3 not overridden
+```
 
 ## Declaraction
 ### Using Declaration (using)
