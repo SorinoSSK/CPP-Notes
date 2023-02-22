@@ -1,6 +1,10 @@
 # CPP Summary
 This reporsitory is just a summary for me to recall some C++ operator and function.
 
+| S/N | Title                                                                                      |
+|-----|:------------------------------------------------------------------------------------------:|
+|1    |[Namespace]([https://link-url-here.org](https://github.com/SorinoSSK/CPP-summary#namespace))|
+
 ## Terminology
 ### Scope
 Scope is use as a reference of a domain a variable is in. The existence of scope allows users to declare functions of the same name as long as they reside in a different scope. For instance scope can be divided into 6 different scope type:  
