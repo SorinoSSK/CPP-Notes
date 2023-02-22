@@ -24,6 +24,15 @@ int main()
     std::cout << "Hello World" << std::endl;
 }
 ```  
+To include concatenate your output, you can simply use "**<<**" to push in data to std::cout
+```
+int main()
+{
+    std::string name;
+    std::cin >> name;
+    std::cout << "Hello World" << name << std::endl;
+}
+```
 **3) std::cin**  
 The object reads data from the terminal.  
 ```
@@ -48,7 +57,7 @@ int main()
 ```
 **4) std::cerr**  
 The object prints error to the console.  
-5) std::clog  
+**5) std::clog**  
 The object prints log messages to the console.  
 ## Code structure
 ### int main()
