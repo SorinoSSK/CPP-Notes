@@ -3,7 +3,7 @@ This reporsitory is just a summary for me to recall some C++ operator and functi
 
 | S/N | Title                                                                                      |
 |-----|:------------------------------------------------------------------------------------------:|
-|1    |[Namespace]([https://link-url-here.org](https://github.com/SorinoSSK/CPP-summary#namespace))|
+|1    |[Namespace](https://github.com/SorinoSSK/CPP-summary#namespace)                             |
 
 ## Terminology
 ### Scope
