@@ -12,7 +12,7 @@ This reporsitory is just a summary for me to recall some C++ operator and functi
 1) std::cout
 The object set an output stream where the output can be displayed on a output device such as a monitor.
 2) std::endl
-The object declares the end on the output stream.
+The object declares the end on the output stream.  
 E.g. We can use the above to display a message on the console.
 ```
 #include <iostream>
@@ -23,7 +23,15 @@ int main()
 }
 ```
 
-
+## Code structure
+### int main()
+This is the main function which will be executed first by the compiler
+```
+int main()
+{
+    ...
+}
+```
 ## Terminology
 ### Scope
 Scope is use as a reference of a domain a variable is in. The existence of scope allows users to declare functions of the same name as long as they reside in a different scope. For instance scope can be divided into 6 different scope type:  
