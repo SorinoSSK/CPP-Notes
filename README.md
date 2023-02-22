@@ -9,10 +9,10 @@ This reporsitory is just a summary for me to recall some C++ operator and functi
 
 ## Basic Libraries
 ### <iostream>
-1) std::cout  
+**1) std::cout**  
 The object set an output stream where the output can be displayed on a output device such as a monitor.  
 The object prints to the console/ terminal.
-2) std::endl  
+**2) std::endl**  
 The object declares the end on the output stream.  
     
 E.g. We can use the above to display a message on the console.  
@@ -24,7 +24,7 @@ int main()
     std::cout << "Hello World" << std::endl;
 }
 ```  
-3) std::cin  
+**3) std::cin**  
 The object reads data from the terminal.  
 ```
 int main()
@@ -46,7 +46,7 @@ int main()
     std::cin >> name >> age;
 }   
 ```
-4) std::cerr  
+**4) std::cerr**  
 The object prints error to the console.  
 5) std::clog  
 The object prints log messages to the console.  
