@@ -17,7 +17,7 @@ The variable is visible throughout block condition such as "for, if, while, or s
 6) Function scope  
 The variable is visible throughout the function it is declared in.
 
-## POD
+### POD
 POD is an abbrevation for "Plain Old Data" which represent a class without :
 1) user defined destructor
 2) copy assignment (=)
@@ -37,11 +37,11 @@ struct Point
 ```
 https://stackoverflow.com/questions/30745753/passive-objects-in-c
 
-## Virtual Function (Inheritance)
+### Virtual Function (Inheritance)
 Virtual functions allows derived classes to replace the implementation provided by the base class. In other words, the newly derived function will override the function within the base class.  
 https://isocpp.org/wiki/faq/virtual-functions#:~:text=Non%2D%20virtual%20member%20functions%20are%20resolved%20statically.,(at%20run%2Dtime).
 
-## Pure Virtual Function
+### Pure Virtual Function
 Pure Virtual Function are function that must be overridden.
 ```
 class Base {
