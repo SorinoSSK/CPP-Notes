@@ -111,7 +111,17 @@ int add2 (count2 + age2);
 int flt2(2.9);          // Decimals will be ignored when storing into flt2.
 
 ```
-
+### variable char
+The variable char can be stored in two different ways, the 1st as an integer index and the 2nd as the character itself. The following code represents the same thing.
+```
+char value = 65;
+char value{'A'};
+```
+To read the integer index of the character, we can use the following function **static_cast\<int\>()**.
+```
+char value{'A'};
+std::cout << static_cast<int>(value) <<std::endl;
+```
 ## Terminology
 ### Scope
 Scope is use as a reference of a domain a variable is in. The existence of scope allows users to declare functions of the same name as long as they reside in a different scope. For instance scope can be divided into 6 different scope type:  
