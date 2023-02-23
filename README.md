@@ -133,6 +133,67 @@ auto val5{12u}      // Will be intepreted as unsigned
 auto val6{12ul}     // Will be intepreted as unsigned long
 auto val2{12ll}     // Will be intepreted as long long
 ```
+## Operators
+### Scope Resolution Operator (::)
+This operator is similar to "." operator in other programming languages but in C++, it is used to access "namespace, class, or struct".  
+1) Accessing global variable.
+```
+int x = 10;
+int main()
+{
+    cout << ::x << endl;
+}
+```
+2) Accessing variable of a class
+```
+class X
+{
+    public:
+        y = 10;
+}
+int main()
+{
+    cout << X::y << endl;
+}
+```
+3) Accessing namespace
+```
+using namespace std;
+int main()
+{
+    std::int x = 10;
+}
+```
+https://stackoverflow.com/questions/11902791/what-is-the-difference-between-and-in-c  
+### Arrow operator (->)
+This operator is similar to "." operator in other programming languages but in C++, it is used to access "pointer".
+```
+Foo *foo = new Foo();
+foo->(variable) = 10;
+foo->(function)();
+```
+Where 
+- (variable): a variable within the class pointed to Foo
+- (function): a function within the class pointed to Foo  
+https://stackoverflow.com/questions/11902791/what-is-the-difference-between-and-in-c  
+### Dot operator (.)
+This operator is similar to "." operator in other programming languages but in C++, it is used to access an instances.
+```
+Foo foo;
+foo.(variable) = 10;
+foo.(function)();
+```
+Where
+- (variable): a variable within the class Foo
+- (function): a function within the class Foo  
+https://stackoverflow.com/questions/11902791/what-is-the-difference-between-and-in-c  
+
+
+### New Operator (new)
+The operator represent storage space allocation. Thus, you are declaring that the resources (memory) will be managed by the user when new is declared.  
+```Foo* foo1 = new Foo;```  
+https://stackoverflow.com/questions/12248703/creating-an-instance-of-class
+
 ## Terminology
 ### Scope
 Scope is use as a reference of a domain a variable is in. The existence of scope allows users to declare functions of the same name as long as they reside in a different scope. For instance scope can be divided into 6 different scope type:  
@@ -273,64 +334,3 @@ typedef enum __attribute__((__packed__)) _NameX
     char b;
 } NameX;
 ```
-
-## Operators
-### Scope Resolution Operator (::)
-This operator is similar to "." operator in other programming languages but in C++, it is used to access "namespace, class, or struct".  
-1) Accessing global variable.
-```
-int x = 10;
-int main()
-{
-    cout << ::x << endl;
-}
-```
-2) Accessing variable of a class
-```
-class X
-{
-    public:
-        y = 10;
-}
-int main()
-{
-    cout << X::y << endl;
-}
-```
-3) Accessing namespace
-```
-using namespace std;
-int main()
-{
-    std::int x = 10;
-}
-```
-https://stackoverflow.com/questions/11902791/what-is-the-difference-between-and-in-c  
-### Arrow operator (->)
-This operator is similar to "." operator in other programming languages but in C++, it is used to access "pointer".
-```
-Foo *foo = new Foo();
-foo->(variable) = 10;
-foo->(function)();
-```
-Where 
-- (variable): a variable within the class pointed to Foo
-- (function): a function within the class pointed to Foo  
-https://stackoverflow.com/questions/11902791/what-is-the-difference-between-and-in-c  
-### Dot operator (.)
-This operator is similar to "." operator in other programming languages but in C++, it is used to access an instances.
-```
-Foo foo;
-foo.(variable) = 10;
-foo.(function)();
-```
-Where
-- (variable): a variable within the class Foo
-- (function): a function within the class Foo  
-https://stackoverflow.com/questions/11902791/what-is-the-difference-between-and-in-c  
-
-
-### New Operator (new)
-The operator represent storage space allocation. Thus, you are declaring that the resources (memory) will be managed by the user when new is declared.  
-```Foo* foo1 = new Foo;```  
-https://stackoverflow.com/questions/12248703/creating-an-instance-of-class
