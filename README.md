@@ -91,11 +91,12 @@ Initialising using **{}** enables the function to work in multiple context.
 ```
 int age{4};
 ```
+**2) Using of = or ()**  
+Initialising using **=** or **()** only allows the function to work on certain/specific context.
+```
 int age1 = 5;
 int age2(6);
 ```
-**2) Using of = or ()**  
-Initialising using **=** or **()** only allows the function to work on certain/specific context.
 
 ## Terminology
 ### Scope
