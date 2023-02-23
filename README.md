@@ -24,7 +24,7 @@ int main()
     std::cout << "Hello World" << std::endl;
 }
 ```  
-To include concatenate your output, you can simply use "**<<**" to push in data to std::cout
+You may too concatenate your output by using "**<<**" to push in data to std::cout
 ```
 int main()
 {
@@ -55,9 +55,15 @@ int main()
     std::cin >> name >> age;
 }   
 ```
-**4) std::cerr**  
+**4) std::getline**
+std::cin do not allow users to enter input with spaces as spaces is similar to breaking out of the input. The problem can be resolved by reading a line rather than a input by using std::getline.
+```
+std::string name;
+std::getline(std::cin, name);
+```
+**5) std::cerr**  
 The object prints error to the console.  
-**5) std::clog**  
+**6) std::clog**  
 The object prints log messages to the console.  
 ## Code structure
 ### int main()
