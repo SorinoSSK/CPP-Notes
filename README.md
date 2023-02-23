@@ -111,7 +111,7 @@ int add2 (count2 + age2);
 int flt2(2.9);          // Decimals will be ignored when storing into flt2.
 
 ```
-### variable char
+### char
 The variable char can be stored in two different ways, the 1st as an integer index and the 2nd as the character itself. The following code represents the same thing.
 ```
 char value = 65;
@@ -121,6 +121,17 @@ To read the integer index of the character, we can use the following function **
 ```
 char value{'A'};
 std::cout << static_cast<int>(value) <<std::endl;
+```
+### auto
+A keyword that allows the compiler to decide the variable type.
+```
+auto var1{12};      // Will be intepreted as integer
+auto val2{12.0}     // Will be intepreted as double
+auto val3{12.0f}    // Will be intepreted as float
+auto val4{12.0l}    // Will be intepreted as long double
+auto val5{12u}      // Will be intepreted as unsigned
+auto val6{12ul}     // Will be intepreted as unsigned long
+auto val2{12ll}     // Will be intepreted as long long
 ```
 ## Terminology
 ### Scope
