@@ -76,6 +76,49 @@ std::getline(std::cin, name);
 The object prints error to the console.  
 **6) std::clog**  
 The object prints log messages to the console.  
+**7) std::flush**
+The object will hold data from being sent to the terminal immediately.
+```
+std::cout << "Test" << "Test2" << std::endl << std::flush;
+```
+### \<iomanip\>
+**1) std::setw()**  
+The object will ensure that all data passing through will be in accordance to the width specified. If the number of characters is less than the specified width, spaces will be added.
+```
+std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
+```
+**2) std::right**  
+The object will set data to be right justified. Using **std::setw()**, data printed will be right justified by default.
+```
+std::cout << std::right;
+std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
+```
+**3) std::left**  
+The object will set data to be left justified. Using **std::setw()**, data printed will be right justified by default.
+```
+std::cout << std::left;
+std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
+```
+**4) std::right**  
+The object will set data to be right justified. Using **std::setw()**, data printed will be right justified by default.
+```
+std::cout << std::right;
+std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
+```
+**5) std::internel**  
+The object will set data to be right justified but if sign exist, it will be left justified. Using **std::setw()**, data printed will be right justified by default.
+```
+std::cout << std::internal;
+std::cout << std::setw(15) << "Test" << std::setw(8) << "-231.14" << std::endl;
+```
+**4) std::setfill()**  
+The object will add the specified character into the data instead of spaces to make up the width.
+```
+std::cout << std::left;
+std::cout << std::setfill('-')
+std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
+```
+
 ## Code structure
 ### int main()
 This is the main function which will be executed first by the compiler
