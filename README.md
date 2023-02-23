@@ -55,7 +55,7 @@ int main()
     std::cin >> name >> age;
 }   
 ```
-**4) std::getline**
+**4) std::getline**  
 std::cin do not allow users to enter input with spaces as spaces is similar to breaking out of the input. The problem can be resolved by reading a line rather than a input by using std::getline.
 ```
 std::string name;
@@ -84,6 +84,19 @@ int main()
     return 0;
 }
 ```
+### Initialising Variables
+There are  3 ways to initialise variable
+**1) Using of {}**  
+Initialising using **{}** enables the function to work in multiple context.
+```
+int age{4};
+```
+int age1 = 5;
+int age2(6);
+```
+**2) Using of = or ()**  
+Initialising using **=** or **()** only allows the function to work on certain/specific context.
+
 ## Terminology
 ### Scope
 Scope is use as a reference of a domain a variable is in. The existence of scope allows users to declare functions of the same name as long as they reside in a different scope. For instance scope can be divided into 6 different scope type:  
