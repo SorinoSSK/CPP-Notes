@@ -94,13 +94,22 @@ int age {4};
 
 int add {count + age};  // This will perform addition before initialising to add.
 
-int flt {2.9};          // Storing float in an integer.
+// Some compiler may not compile this line of code.
+int flt {2.9};          // Storing float in an integer, warning will be given.
 ```
-**2) Using of = or ()**  
+**2) Using of = or functional variable initialisation, ()**  
 Initialising using **=** or **()** only allows the function to work on certain/specific context.
 ```
+int count1 = 4;
 int age1 = 5;
-int age2(6);
+int add1 = count1 + age1;
+int flt1 = 2.9;         // Rounding will occur.
+
+int count2(5);
+int age2 (6);
+int add2 (count2 + age2);
+int flt2(2.9);          // Decimals will be ignored when storing into flt2.
+
 ```
 
 ## Terminology
