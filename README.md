@@ -115,8 +115,14 @@ std::cout << std::setw(15) << "Test" << std::setw(8) << "-231.14" << std::endl;
 The object will add the specified character into the data instead of spaces to make up the width.
 ```
 std::cout << std::left;
-std::cout << std::setfill('-')
+std::cout << std::setfill('-');
 std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
+```
+**5) std::boolalpha**
+The object will convert the data to true or false if they are 1 or 0.
+```
+std::cout << std::boolalpha;
+std::cout << "Test" << 1 << std::endl
 ```
 
 ## Code structure
