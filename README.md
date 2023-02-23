@@ -12,9 +12,7 @@ This reporsitory is just a summary for me to recall some C++ operator and functi
 **1) std::cout**  
 The object set an output stream where the output can be displayed on a output device such as a monitor.  
 The object prints to the console/ terminal.  
-**2) std::endl**  
-The object declares the end on the output stream.  
-    
+
 E.g. We can use the above to display a message on the console.  
 ```
 #include <iostream>
@@ -33,6 +31,19 @@ int main()
     std::cout << "Hello World" << name << std::endl;
 }
 ```
+
+**2) std::endl**  
+The object declares the end on the output stream. However, you may also use "\n" to declare end of the line.  
+
+```
+std::cout << "Test" << std::endl;
+std::cout << "Hey" << std::endl;
+```
+```
+std::cout << "Test\n";
+std::cout << "Hey"\n";
+```
+
 **3) std::cin**  
 The object reads data from the terminal.  
 ```
