@@ -194,6 +194,16 @@ The operator represent storage space allocation. Thus, you are declaring that th
 ```Foo* foo1 = new Foo;```  
 https://stackoverflow.com/questions/12248703/creating-an-instance-of-class
 
+### Prefix and postfix increment or decrement
+```
+int items {6};
+std::cout << items++ << std::endl;      // this will print 6
+std::cout << items << std::endl;        // this will print 7
+
+items = 6;
+std::cout << ++items << std::endl;      // this will print 7
+```
+
 ## Terminology
 ### Scope
 Scope is use as a reference of a domain a variable is in. The existence of scope allows users to declare functions of the same name as long as they reside in a different scope. For instance scope can be divided into 6 different scope type:  
