@@ -89,10 +89,12 @@ There are  3 ways to initialise variable
 **1) Using of {}**  
 Initialising using **{}** enables the function to work in multiple context.
 ```
-int count{};            //This will initialise count with 0
+int count{};            //This will initialise count with 0.
 int age {4};
 
 int add {count + age};  // This will perform addition before initialising to add.
+
+int flt {2.9};          // Storing float in an integer.
 ```
 **2) Using of = or ()**  
 Initialising using **=** or **()** only allows the function to work on certain/specific context.
