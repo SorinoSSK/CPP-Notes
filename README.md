@@ -118,11 +118,63 @@ std::cout << std::left;
 std::cout << std::setfill('-');
 std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
 ```
-**5) std::boolalpha**
+**5) std::boolalpha**  
 The object will convert the data to true or false if they are 1 or 0.
 ```
 std::cout << std::boolalpha;
 std::cout << "Test" << 1 << std::endl
+```
+**6) std::noboolalpha**  
+The object will convert data to a non true/false display.
+```
+std::cout << std::boolalpha;
+std::cout << "Test" << true << std::endl
+```
+**7) std::showpos**  
+The object includes the display of "+" for positive number. Negative number have the symbol "-" on display while the positive number does not have its own symbol by default.
+```
+std::cout << std:showpos;
+std::cout << 400 << std::endl;
+```
+**7) std::noshowpos**  
+The object disable the previous setting of "std::showpos".
+```
+std::cout << std:noshowpos;
+std::cout << 400 << std::endl;
+```
+**8) std::dec, std::hex, std::oct**
+The objects convert numbers to other numbering format such as hexdecimal and octadecimal. However, the objects are unables to convert double var.
+```
+std::cout << std::dec << 400 << std::endl;
+std::cout << std::hex << 400 << std::endl;
+std::cout << std::oct << 400 << std::endl;
+```
+**9) std::uppercase, std::lowercase**  
+The objects converts the display to uppercase or lowercase. The function affects all characters, including **a** to **f** of hexadecimal.
+```
+std::cout << std:uppercase;
+std::cout << "hey there" << std::endl;
+```
+**10) std::scientific**  
+The object display numbering format in scientific display.
+```
+std::cout << std:scientific;
+std::cout << 400 << std::endl;
+std::cout << 500 << std::endl;
+std::cout << 600 << std::endl;
+```
+**10) std::fixed**  
+The object display numbering format in a fixed number of decimal point. 
+```
+std::cout << std:scientific;
+std::cout << 400 << std::endl;
+std::cout << 500 << std::endl;
+std::cout << 600 << std::endl;
+```
+**11) unset std::scientific and std::fixed
+This code will remove the setting of display to fix or scientific.
+```
+std::cout.unsetf(std::ios::scientific | std::ios::fixed);
 ```
 
 ## Code structure
