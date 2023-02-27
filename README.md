@@ -171,10 +171,27 @@ std::cout << 400 << std::endl;
 std::cout << 500 << std::endl;
 std::cout << 600 << std::endl;
 ```
-**11) unset std::scientific and std::fixed
+**11) unset std::scientific and std::fixed**  
 This code will remove the setting of display to fix or scientific.
 ```
 std::cout.unsetf(std::ios::scientific | std::ios::fixed);
+```
+**12) std::setprecision()**  
+The object will determine the precision of values that will be printed (How many decimals point will it be printing).
+```
+double a = 2.0565664613684685489562666556;
+
+std::cout << std:setprecision(10);
+std::cout << a << std::endl;
+
+std::cout << std:setprecision(20);
+std::cout << a << std::endl;
+```
+**13) std::showpoint**  
+The object enforces the display of decimal point even though the value printed is an integer.
+```
+std::cout << std:showpoint;
+std::cout << 30 << std::endl;
 ```
 
 ## Code structure
