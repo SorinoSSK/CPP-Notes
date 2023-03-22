@@ -383,6 +383,15 @@ if (var)
     // Some task
 }
 ```
+### References
+References reference a value from another variable. You can  declare a reference by using "**&**" at the end of the variable type. A reference differ from a pointer as a reference provides a new name for a variable while a pointer stores the address of a variable. 
+```
+int var {45};
+int& var_reference{var};
+
+var_reference = 25;             // var will also be modified to store 25
+```
+In references, the address of the reference variable is the same as the address of its original variable. ```&var_reference == &var;```
 ## Operators
 ### Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access "namespace, class, or struct".  
