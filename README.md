@@ -337,6 +337,7 @@ int *pt_var {&var};
 
 int var2 {200};
 pt_var = &var2;         // Change addresses
+*pt_var = 300;          // Stores value into the pointed address
 
 // To read the values stored in var2 and pointed from pt_var, we can do the following
 // Dereferencing pointer.
@@ -581,8 +582,12 @@ You can allocate a set of memory space to work on by using "**new int**" until y
 ```
 int *number{nullptr};
 number = new int;       // This will dynamically allocate memory
+// The following line will work the same as above
+int *number1 {new int{67}}  // However this way of declaration is bad as "delete number1" will fully remove the pointer rather than removing its allocated memory.
 
-*number = 77;
+*number = 77;           // This will store a value in the pointed memory
+
+delete number;          // This will release the allocated memory
 ```
 If declared in a local scope, the variable will not be killed after the program exits "**{}**"
 ```
