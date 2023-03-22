@@ -300,6 +300,20 @@ for (int i: scores)
     sum += i;
 }
 ```
+### Pointers
+Pointer is a variable that stores the address of another variable. It is declared with a "**\***".
+```
+int * i {};         // Stores the address of a variable of int type.
+double * x {};      // Stores the address of a variable of double type.
+
+int * y {nullptr};  // Explicitely initialise a null pointer. The above 2 examples do the same.
+```
+You may insert the "\*" in anyway you like and examples below do the same.
+```
+int*  i {};
+int * i {};
+int  *i {};
+```
 ## Operators
 ### Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access "namespace, class, or struct".  
