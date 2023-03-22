@@ -88,74 +88,68 @@ The object will ensure that all data passing through will be in accordance to th
 std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
 ```
 **2) std::right**  
-The object will set data to be right justified. Using **std::setw()**, data printed will be right justified by default.
+The object will set data to be right justified on console print. Using **std::setw()**, data printed will be right justified by default.
 ```
 std::cout << std::right;
 std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
 ```
 **3) std::left**  
-The object will set data to be left justified. Using **std::setw()**, data printed will be right justified by default.
+The object will set data to be left justified on console print. Using **std::setw()**, data printed will be right justified by default.
 ```
 std::cout << std::left;
 std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
 ```
-**4) std::right**  
-The object will set data to be right justified. Using **std::setw()**, data printed will be right justified by default.
-```
-std::cout << std::right;
-std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
-```
-**5) std::internel**  
+**4) std::internel**  
 The object will set data to be right justified but if sign exist, it will be left justified. Using **std::setw()**, data printed will be right justified by default.
 ```
 std::cout << std::internal;
 std::cout << std::setw(15) << "Test" << std::setw(8) << "-231.14" << std::endl;
 ```
-**4) std::setfill()**  
+**5) std::setfill()**  
 The object will add the specified character into the data instead of spaces to make up the width.
 ```
 std::cout << std::left;
 std::cout << std::setfill('-');
 std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
 ```
-**5) std::boolalpha**  
+**6) std::boolalpha**  
 The object will convert the data to true or false if they are 1 or 0.
 ```
 std::cout << std::boolalpha;
 std::cout << "Test" << 1 << std::endl
 ```
-**6) std::noboolalpha**  
+**7) std::noboolalpha**  
 The object will convert data to a non true/false display.
 ```
 std::cout << std::boolalpha;
 std::cout << "Test" << true << std::endl
 ```
-**7) std::showpos**  
+**8) std::showpos**  
 The object includes the display of "+" for positive number. Negative number have the symbol "-" on display while the positive number does not have its own symbol by default.
 ```
 std::cout << std:showpos;
 std::cout << 400 << std::endl;
 ```
-**7) std::noshowpos**  
+**9) std::noshowpos**  
 The object disable the previous setting of "std::showpos".
 ```
 std::cout << std:noshowpos;
 std::cout << 400 << std::endl;
 ```
-**8) std::dec, std::hex, std::oct**
+**10) std::dec, std::hex, std::oct**
 The objects convert numbers to other numbering format such as hexdecimal and octadecimal. However, the objects are unables to convert double var.
 ```
 std::cout << std::dec << 400 << std::endl;
 std::cout << std::hex << 400 << std::endl;
 std::cout << std::oct << 400 << std::endl;
 ```
-**9) std::uppercase, std::lowercase**  
+**11) std::uppercase, std::lowercase**  
 The objects converts the display to uppercase or lowercase. The function affects all characters, including **a** to **f** of hexadecimal.
 ```
 std::cout << std:uppercase;
 std::cout << "hey there" << std::endl;
 ```
-**10) std::scientific**  
+**12) std::scientific**  
 The object display numbering format in scientific display.
 ```
 std::cout << std:scientific;
@@ -163,7 +157,7 @@ std::cout << 400 << std::endl;
 std::cout << 500 << std::endl;
 std::cout << 600 << std::endl;
 ```
-**10) std::fixed**  
+**13) std::fixed**  
 The object display numbering format in a fixed number of decimal point. 
 ```
 std::cout << std:scientific;
@@ -171,12 +165,12 @@ std::cout << 400 << std::endl;
 std::cout << 500 << std::endl;
 std::cout << 600 << std::endl;
 ```
-**11) unset std::scientific and std::fixed**  
+**14) unset std::scientific and std::fixed**  
 This code will remove the setting of display to fix or scientific.
 ```
 std::cout.unsetf(std::ios::scientific | std::ios::fixed);
 ```
-**12) std::setprecision()**  
+**15) std::setprecision()**  
 The object will determine the precision of values that will be printed (How many decimals point will it be printing).
 ```
 double a = 2.0565664613684685489562666556;
@@ -187,7 +181,7 @@ std::cout << a << std::endl;
 std::cout << std:setprecision(20);
 std::cout << a << std::endl;
 ```
-**13) std::showpoint**  
+**16) std::showpoint**  
 The object enforces the display of decimal point even though the value printed is an integer.
 ```
 std::cout << std:showpoint;
