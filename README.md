@@ -289,6 +289,17 @@ for (size_t i{}; i<10; i++)
     // Some Task
 }
 ```
+### Range based for loop
+A different way to perform for loop when data size is unknown.
+```
+int scores [] {2,5,8,2,5,6,9};
+int sum {0};
+
+for (int i: scores)
+{
+    sum += i;
+}
+```
 ## Operators
 ### Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access "namespace, class, or struct".  
