@@ -100,7 +100,7 @@ std::cout << std::left;
 std::cout << std::setw(15) << "Test" << std::setw(8) << "Success" << std::endl;
 ```
 **4) std::internel**  
-The object will set data to be right justified but if sign exist, it will be left justified. Using **std::setw()**, data printed will be right justified by default.
+The object will set data to be right justified but if sign exist, it will be left justified on console print. Using **std::setw()**, data printed will be right justified by default.
 ```
 std::cout << std::internal;
 std::cout << std::setw(15) << "Test" << std::setw(8) << "-231.14" << std::endl;
@@ -136,7 +136,7 @@ The object disable the previous setting of "std::showpos".
 std::cout << std:noshowpos;
 std::cout << 400 << std::endl;
 ```
-**10) std::dec, std::hex, std::oct**
+**10) std::dec, std::hex, std::oct**  
 The objects convert numbers to other numbering format such as hexdecimal and octadecimal. However, the objects are unables to convert double var.
 ```
 std::cout << std::dec << 400 << std::endl;
