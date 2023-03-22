@@ -260,6 +260,12 @@ auto val2{12ll}     // Will be intepreted as long long
 1) (floating point)/0 = (+/-)Infinity  
 2) 0.0/0.0 = Nan
 
+### static_cast<>
+A function to convert values.
+```
+static_case<int>(values);   // values will be interpreted as an integer.
+```
+
 ## Operators
 ### Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access "namespace, class, or struct".  
