@@ -317,7 +317,7 @@ char message[] {"HELLO"};
 std::cout << message << std::endl;
 ```
 ### Pointers
-Pointer is a variable that stores the address of another variable. It is declared with a "**\***".
+Pointer is a variable that stores the address of another variable. The function is useful when no modification needs to be made and only referencing is required. It is declared with a "**\***".
 ```
 int * i {};         // Stores the address of a variable of int type.
 double * x {};      // Stores the address of a variable of double type.
@@ -341,7 +341,15 @@ pt_var = &var2;         // Change addresses
 // To read the values stored in var2 and pointed from pt_var, we can do the following
 // Dereferencing pointer.
 std::cout << *pt_var << std::endl;
+```
+When a pointer is referenced to an character array, the pointer will store the array of the first character.
+```
+// This pointer will force the char to be a const char
+char * pt_msg {"Hello World!"};         // pt_msg will store the address of H
 
+// However, the behaviour is a little different for character array.
+std::cout << p_message << std::endl;    // This will attempt to print the entire string
+std::cout << *p_message << std::endl;   // This will print a "H"
 ```
 ## Operators
 ### Scope Resolution Operator (::)
