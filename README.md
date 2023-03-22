@@ -187,7 +187,8 @@ The object enforces the display of decimal point even though the value printed i
 std::cout << std:showpoint;
 std::cout << 30 << std::endl;
 ```
-
+### \<cmath\>
+https://en.cppreference.com/w/cpp/header/cmath
 ## Code structure
 ### int main()
 This is the main function which will be executed first by the compiler
@@ -260,10 +261,25 @@ auto val2{12ll}     // Will be intepreted as long long
 1) (floating point)/0 = (+/-)Infinity  
 2) 0.0/0.0 = Nan
 
-### static_cast<>
+### static_cast<>  
 A function to convert values.
 ```
 static_case<int>(values);   // values will be interpreted as an integer.
+```
+### Ternary expression
+A subtitue expression for if-else statement. The expression below are the same.
+```
+result = (condition) ? option1 : option2 ;
+```
+```
+if (condition)
+{
+    result = option1;
+}
+else
+{
+    result = option2;
+}
 ```
 
 ## Operators
