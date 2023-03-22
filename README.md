@@ -300,6 +300,22 @@ for (int i: scores)
     sum += i;
 }
 ```
+### cString
+A character can be read as a string when it has a proper cString format. E.g. null termination, "**\0**"
+```
+char message[5] {'H','E','L','L','O',\0};
+std::cout << message << std::endl;
+```
+or
+```
+char message[6] {'H','E','L','L','O'};
+std::cout << message << std::endl;
+```
+or
+```
+char message[] {"HELLO"};
+std::cout << message << std::endl;
+```
 ### Pointers
 Pointer is a variable that stores the address of another variable. It is declared with a "**\***".
 ```
