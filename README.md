@@ -86,6 +86,17 @@ The object will prevent any error from being displayed on the console.
 ```
 int * var {new(std::nothrow) int[999999999999999999]};
 ```
+**9) std::exception**  
+```
+try
+{
+    // Some work
+}
+catch(std::exception& ex)
+{
+    std::cout << ex.what() << std::endl;
+}
+```
 ### \<iomanip\>
 **1) std::setw()**  
 The object will ensure that all data passing through will be in accordance to the width specified. If the number of characters is less than the specified width, spaces will be added.
