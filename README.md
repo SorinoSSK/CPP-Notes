@@ -317,7 +317,7 @@ char message[] {"HELLO"};
 std::cout << message << std::endl;
 ```
 ### Pointers
-Pointer is a variable that stores the address of another variable. The function is useful when no modification needs to be made and only referencing is required. It is declared with a "**\***".
+Pointer is a variable that stores the address of another variable. The function is useful when **no modification** needs to be made and **only referencing** is required. It is declared with a "**\***".
 ```
 int * i {};         // Stores the address of a variable of int type.
 double * x {};      // Stores the address of a variable of double type.
@@ -346,6 +346,8 @@ When a pointer is referenced to an character array, the pointer will store the a
 ```
 // This pointer will force the char to be a const char
 char * pt_msg {"Hello World!"};         // pt_msg will store the address of H
+// If the above declaration fails, you will have to declare it with a const
+const char * pt_msg {"Hello World!"};   // this performs the same as above
 
 // However, the behaviour is a little different for character array.
 std::cout << p_message << std::endl;    // This will attempt to print the entire string
@@ -561,4 +563,35 @@ typedef enum __attribute__((__packed__)) _NameX
     int a;
     char b;
 } NameX;
+```
+## Variables Storing
+### Local scope variable
+Variable will be killed when program exits "**{}**"
+```
+int main (int argc, char **argv)
+{
+    {
+        int local_scope_variable {33};
+    }
+    return 0;
+}
+```
+## Dynamic memory/ Heap memory
+You can allocate a set of memory space to work on by using "**new int**" until you explicitely kill the variable.
+```
+int *number{nullptr};
+number = new int;       // This will dynamically allocate memory
+
+*number = 77;
+```
+If declared in a local scope, the variable will not be killed after the program exits "**{}**"
+```
+int main (int argc, char **argv)
+{
+    {
+        int local_scope_variable {33};
+        int *number = new int;              // Will not be kill after exiting {}
+    }
+    return 0;
+}
 ```
