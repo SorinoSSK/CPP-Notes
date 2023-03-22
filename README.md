@@ -370,6 +370,19 @@ const char * pt_msg {"Hello World!"};   // this performs the same as above
 std::cout << p_message << std::endl;    // This will attempt to print the entire string
 std::cout << *p_message << std::endl;   // This will print a "H"
 ```
+You may also check if a pointer is a null pointer by using
+```
+int *var{};
+if !(var == nullptr)
+{
+    // Some task
+}
+// The following code performs the same as the above.
+if (var)
+{
+    // Some task
+}
+```
 ## Operators
 ### Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access "namespace, class, or struct".  
@@ -615,4 +628,28 @@ int main (int argc, char **argv)
     }
     return 0;
 }
+```
+Deleting a pointer twice could cause an error in  the program thus it is always a good practice to release and set to null when you have finish using the pointer.
+```
+int *var {new int{300}};
+
+delete var;
+nullptr;
+```
+Array declaration operates a little differently and you may declare and release it in the following way. However, sizeof() will not work for this dynamic array as it is still a pointer.
+```
+const int size{10};
+double *var {new double[size]};             // the size of the array will have to be a const variable
+
+// Calling from var[index] will return the value instead of an address. E.g.
+std::coud << var[1] << std::endl;
+std::coud << var[6] << std::endl;
+
+// The following uses pointer arithmatics but it works the same as the above
+std::coud << *(var + 1) << std::endl;
+std::coud << *(var + 6) << std::endl;
+
+// Release the memory in the following way
+delete [] var;
+var = nullptr;
 ```
