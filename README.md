@@ -81,6 +81,11 @@ The object will hold data from being sent to the terminal immediately.
 ```
 std::cout << "Test" << "Test2" << std::endl << std::flush;
 ```
+**8) std::nothrow**  
+The object will prevent any error from being displayed on the console.
+```
+int * var {new(std::nothrow) int[999999999999999999]};
+```
 ### \<iomanip\>
 **1) std::setw()**  
 The object will ensure that all data passing through will be in accordance to the width specified. If the number of characters is less than the specified width, spaces will be added.
@@ -583,7 +588,7 @@ You can allocate a set of memory space to work on by using "**new int**" until y
 int *number{nullptr};
 number = new int;       // This will dynamically allocate memory
 // The following line will work the same as above
-int *number1 {new int{67}}  // However this way of declaration is bad as "delete number1" will fully remove the pointer rather than removing its allocated memory.
+int *number1 {new int{67}};
 
 *number = 77;           // This will store a value in the pointed memory
 
