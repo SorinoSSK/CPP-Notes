@@ -281,7 +281,14 @@ else
     result = option2;
 }
 ```
-
+### size_t  
+A representation of some unsigned int for positive numbers [sizes]. A C++ convention rather than using "**unsigned int**" e.g.
+```
+for (size_t i{}; i<10; i++)
+{
+    // Some Task
+}
+```
 ## Operators
 ### Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access "namespace, class, or struct".  
