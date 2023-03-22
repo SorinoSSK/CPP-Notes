@@ -256,6 +256,10 @@ auto val5{12u}      // Will be intepreted as unsigned
 auto val6{12ul}     // Will be intepreted as unsigned long
 auto val2{12ll}     // Will be intepreted as long long
 ```
+### division  
+1) (floating point)/0 = (+/-)Infinity  
+2) 0.0/0.0 = Nan
+
 ## Operators
 ### Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access "namespace, class, or struct".  
