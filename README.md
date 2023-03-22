@@ -330,6 +330,19 @@ int*  i {};
 int * i {};
 int  *i {};
 ```
+To assign a variable to the pointer, you will have to use the address operator "**&**".
+```
+int var {100};
+int *pt_var {&var};
+
+int var2 {200};
+pt_var = &var2;         // Change addresses
+
+// To read the values stored in var2 and pointed from pt_var, we can do the following
+// Dereferencing pointer.
+std::cout << *pt_var << std::endl;
+
+```
 ## Operators
 ### Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access "namespace, class, or struct".  
