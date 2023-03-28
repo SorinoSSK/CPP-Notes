@@ -207,7 +207,12 @@ std::cout << 30 << std::endl;
 https://en.cppreference.com/w/cpp/header/cmath
 
 ### \<cctype\>
+Validate input.  
 https://en.cppreference.com/w/cpp/header/cctype
+
+### \<cstring\>
+https://en.cppreference.com/w/cpp/header/cstring
+
 ## Code structure
 ### int main()
 This is the main function which will be executed first by the compiler
