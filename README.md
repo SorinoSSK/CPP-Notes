@@ -205,6 +205,9 @@ std::cout << 30 << std::endl;
 ```
 ### \<cmath\>
 https://en.cppreference.com/w/cpp/header/cmath
+
+### \<cctype\>
+https://en.cppreference.com/w/cpp/header/cctype
 ## Code structure
 ### int main()
 This is the main function which will be executed first by the compiler
@@ -392,6 +395,12 @@ int& var_reference{var};
 var_reference = 25;             // var will also be modified to store 25
 ```
 In references, the address of the reference variable is the same as the address of its original variable. ```&var_reference == &var;```
+Notes:  
+1) You may have a const reference even when the referenced variable is not a const variable.
+```
+int age{20};
+const int& const_age{age};
+```
 ## Operators
 ### Scope Resolution Operator (::)
 This operator is similar to "." operator in other programming languages but in C++, it is used to access "namespace, class, or struct".  
