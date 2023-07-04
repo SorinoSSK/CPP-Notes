@@ -1,4 +1,4 @@
-# CPP Summary
+# C++ Notes
 This reporsitory is just a summary for me to recall some C++ operator and function.
 
 | S/N | Title                                                                                      |
